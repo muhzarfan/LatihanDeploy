@@ -1,0 +1,284 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3{
+    font-weight: 700;
+}
+
+div{
+    display: block;
+}
+
+h1{
+    display: block;
+    font-size: 2em;
+}
+
+p{  
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+ul{ /*blm tau fungsi disini*/
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.img-header{
+    background-attachment: fixed; /*biar gambarnya tetap walau di zoom*/
+    background-image: url("https://images.unsplash.com/photo-1682687220989-cbbd30be37e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-size: cover; /*biar nutupin keseluruhan layar*/
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.greetings{
+    position: absolute; /*biar kek text wrapping front*/
+    margin: 0;
+    width: 100%; /*biar pas di tengah*/
+    top: 45%; /*jarak dari atas*/
+    text-align: center;
+    transform: scale(.8);
+}
+
+.desktop{
+    display: block;
+}
+
+.icon{
+    float: left
+}
+
+.icon img {
+    display: none;
+    padding: 0;
+    width: 45px; /*ukuran icon*/
+    margin: -0.3em 1em; /*posisi icon*/
+    float: left;
+}
+
+.navigationbar ul{
+    position: sticky;
+    top: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: black;
+}
+
+.navigationbar li{
+    color: white;
+    font-size: 1.2em;
+    text-align: right;
+    padding: 15px 25px;
+    display: inline-block;
+}
+
+#isikonten{ /*bagian isi dari konten biar ada jarak sama navigation bar*/
+    padding: 2em 0;
+}
+
+.introduction, .pengalaman, .keahlian{
+    text-align: center;
+}
+
+.img-icon{
+    max-width: 12em;
+}
+
+.perkenalan{
+    font-size: 1.2em;
+    width: 80%;
+    max-width: 24em;
+    margin: 1em auto;
+    text-align: justify;
+}
+
+.pengalaman, .keahlian{
+    display: inline-block;
+    margin-top: 5em;
+}
+
+#portofolio{
+    width: 100%;
+    padding: 2em 0;
+}
+
+.header-judul{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container{
+    text-align: center;
+    width: 100%;
+    overflow: hidden; /*klo kontenya sampai keluar kotak maka yg tampil sekotaknya aja*/
+}
+
+.img-portofolio{
+    max-width: 300px;
+    display: inline-block;
+    width: 90%;
+    vertical-align: middle;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+hr{
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+#kontak{
+    vertical-align: top;
+}
+
+.form-contact-me, .contact-info{
+    width: 100%;
+    text-align: center;
+}
+
+h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+form{
+    display: block;
+    margin-top: 0em;
+    margin-right: 7em;
+}
+
+.inputan{
+    width: 85%;
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+}
+
+label{
+    cursor: default;
+}
+
+.inputan > label{
+    display: block;
+    font-size: 1.2em;
+}
+
+.inputan > input, .inputan > textarea{
+    width: 100%;
+    margin: 0.5em 0;
+    font-size: 1em;
+}
+
+.btn-kirim{
+    width: 85%;
+    margin: 1.5em 0;
+    border: none;
+    background-color: #FFB000;
+    color: #F5F5DC;
+    font-size: 1em;
+    padding: 0.5em 0;
+    border-radius: 0.5em;
+}
+
+.btn-kirim:hover{
+    background-color: #ECEE81;
+    color: #FFB000;
+}
+
+.contact-info > div{
+    display: inline-block;
+    text-align: left;
+}
+
+.contact-icon-bundler{
+    display: block;
+}
+
+.contact-icon{
+    width: 50px;
+    margin: 2em;
+}
+
+.contact-desktop{
+    display: none;
+}
+
+footer{
+    text-align: center;
+    margin-top: 2em;
+    padding: 1.5em 0;
+    color: white;
+    background-color: black;
+}
+
+@media only screen and (min-width: 600px){
+    .icon img{
+        display: block;
+    }
+
+    .navigationbar ul{
+        text-align: right;
+    }
+
+    .pengalaman, .keahlian{
+        width: 49.5%;
+        vertical-align: top;
+    }
+
+    .form-contact-me, .contact-info{
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .non-desktop{
+        display: none;
+    }
+
+    .contact-info > div{
+        display: block;
+    }
+
+    .contact-icon-bundler{
+        display: inline-block;
+        min-width: 600px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .contact-icon{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .contact-desktop{
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
